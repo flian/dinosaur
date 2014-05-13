@@ -15,18 +15,18 @@
 		<servlet-name>mvc-dispatcher</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-
-    <filter-mapping>
-        <servlet-name>mvc-dispatcher</servlet-name>
-    </filter-mapping>
-
+	
+	<welcome-file-list>
+	    <welcome-file>/html/index.html</welcome-file>
+	</welcome-file-list>
+	
     <error-page>
         <error-code>404</error-code>
-        <location>/WEB-INF/site/errors/404.jsp</location>
+        <location>/errors/404.html</location>
     </error-page>
 
     <error-page>
         <error-code>403</error-code>
-        <location>/WEB-INF/site/errors/403.jsp</location>
+        <location>/errors/403.html</location>
     </error-page>
 </web-app>
